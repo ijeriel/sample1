@@ -85,34 +85,34 @@ function getMetadata(sample) {
             })
     });
 }
-// getMetadata(940)
+getMetadata(940)
 
 //Drop down menu selector
-function init() {
-    var dropDownMenu = d3.select("#selDataset");
+// function init() {
+//     var dropDownMenu = d3.select("#selDataset");
 
-    d3.json("samples.json").then((data) => {
+//     d3.json("samples.json").then((data) => {
         
-        var idNames = data.names;
-        idNames.forEach((sample) => {
-            dropDownMenu
-                .append("option")
-                .text(sample)
-                .property("value", sample);        
-        });
+//         var idNames = data.names;
+//         idNames.forEach((sample) => {
+//             dropDownMenu
+//                 .append("option")
+//                 .text(sample)
+//                 .property("value", sample);        
+//         });
 
 
-        const firstName = idNames[0];
-        horizontalBarChart(firstName);
-        bubbleChart(firstName);
-        getMetadata(firstName);
-    });
-}
+//         const firstName = idNames[0];
+//         horizontalBarChart(firstName);
+//         bubbleChart(firstName);
+//         getMetadata(firstName);
+//     });
+// }
 
-function optionChanged(changeID) {
-    horizontalBarChart(changeID);
-    bubbleChart(changeID);
-    getMetadata(changeID);
-};
+// function optionChanged(changeID) {
+//     horizontalBarChart(changeID);
+//     bubbleChart(changeID);
+//     getMetadata(changeID);
+// };
 
-init();
+// init();
