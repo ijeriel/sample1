@@ -34,7 +34,7 @@ function horizontalBarChart(sample) {
       
     });
 };
-// horizontalBarChart(940)
+horizontalBarChart(940)
 
 //Function to build bubble chart
 function bubbleChart(sample) {
@@ -70,7 +70,7 @@ function bubbleChart(sample) {
         // Plotly.restyle("bubble", trace2, bubbleLayout);
     });
 };
-// bubbleChart(940)
+bubbleChart(940)
 
 //Get demographic info
 function getMetadata(sample) {
@@ -85,7 +85,7 @@ function getMetadata(sample) {
             })
     });
 }
-getMetadata(940)
+// getMetadata(940)
 
 //Drop down menu selector
 // function init() {
