@@ -73,18 +73,18 @@ function bubbleChart(sample) {
 bubbleChart(940)
 
 //Get demographic info
-function getMetadata(sample) {
-    d3.json('samples.json').then((data) => {
-        var metadata = data.metadata;
-        var sampleValues = metadata.filter(object => object.id == sample);
-        var demographicInfo = sampleValues[0];
-        var panel = d3.select("#sample-metadata");
-        panel.html("");
-        Object.entries(demographicInfo).forEach(([key, value]) => {
-            panel.append("h5").text(key.toUpperCase() + ': ' + value);
-            })
-    });
-}
+// function getMetadata(sample) {
+//     d3.json('samples.json').then((data) => {
+//         var metadata = data.metadata;
+//         var sampleValues = metadata.filter(object => object.id == sample);
+//         var demographicInfo = sampleValues[0];
+//         var panel = d3.select("#sample-metadata");
+//         panel.html("");
+//         Object.entries(demographicInfo).forEach(([key, value]) => {
+//             panel.append("h5").text(key.toUpperCase() + ': ' + value);
+//             })
+//     });
+// }
 // getMetadata(940)
 
 //Drop down menu selector
